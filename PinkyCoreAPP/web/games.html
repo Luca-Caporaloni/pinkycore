@@ -1,0 +1,31 @@
+<main>
+    <!-- Formulario para subir juegos -->
+    <section class="game-upload">
+        <h2>Sube tu Juego</h2>
+        <form id="game-form">
+            <label for="game-title">Título:</label>
+            <input type="text" id="game-title" required>
+            
+            <label for="game-category">Categoría:</label>
+            <input type="text" id="game-category" required>
+            
+            <label for="game-device">Dispositivo:</label>
+            <input type="text" id="game-device" required>
+            
+            <label for="game-image">URL de la Imagen:</label>
+            <input type="text" id="game-image" required>
+            
+            <label for="game-author">Autor:</label>
+            <input type="text" id="game-author" required>
+            
+            <button type="submit">Subir Juego</button>
+        </form>
+    </section>
+    <!-- Lista de juegos -->
+    <section class="game-list" id="game-list">
+        <!-- Aquí se insertarán los juegos dinámicamente -->
+    </section>
+    <div class="load-more-container">
+        <button id="load-more">CARGAR MÁS</button>
+    </div>
+</main>

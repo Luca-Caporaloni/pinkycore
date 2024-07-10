@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PinkyCore</title>
+    <link rel="icon" type="image/png" href="recurses/images/logo/logo-p.png">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Acme&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <a href="#" id="menu-toggle" class="menu-toggle">&#9776;</a> <!-- &#9776; es el símbolo de las tres líneas típico de menú -->
+            <img src="recurses/images/logo/logo-p.png" alt="Logo">
+            <h1>PinkyCore</h1>
+        </div>
+        <nav>
+            <ul>
+                <!-- <li><a href="https://discord.com/invite/DTA4agWEsJ" class="external-link">Discord</a></li>  -->
+            </ul>
+        </nav>
+    </header>
+    <main>  
+        <div class="search-bar">
+            <input type="text" id="search-input" placeholder="Buscar Juego...">
+            <button id="search-button" class="search-button"></button>
+            <button id="delete-button" class="delete-button"></button>
+        </div>
+
+        <div class="categories">
+            <select id="category-select">
+                <option value="all">Todas Categorías</option>
+                <option value="Accion">Acción</option>
+                <option value="Aventura">Aventura</option>
+                <option value="Arcade">Arcade</option>
+                <option value="Deporte">Deporte</option>
+                <option value="Estrategia">Estrategia</option>
+                <option value="Simulacion">Simulación</option>
+                <option value="Juego de Mesa">Juego de mesa</option>
+                <option value="Juego Musical">Juego musical</option>
+                <option value="Casual">Casual</option>
+                <option value="MMORPG">MMORPG</option>
+                <option value="Tower Defense">Tower Defense</option>
+                <option value="Disparos">Disparos</option>
+                <option value="Guerra">Guerra</option>
+                <option value="Supervivencia">Supervivencia</option>
+                <option value="Match-3">Match 3</option>
+                <option value="MMO">MMO</option>
+                <option value="Multijugador">Multijugador</option>
+                <option value="Sandbox">Sandbox</option>
+                <option value="PvP">PvP</option>
+                <option value="RPG">RPG</option>
+                <option value="Castillos">Castillos</option>
+                <option value="Medievales">Medievales</option>
+                <option value="Solitaire">Solitaire</option>
+                <option value="Puzzles">Puzzles</option>
+                <option value="Robots">Robots</option>
+                <option value="Miedo">Miedo</option>
+                <option value="Rogue Like">Rogue-Like</option>
+                <option value="Battle Royale">Battle Royale</option>
+                <option value="Survival-Horror">Survival Horror</option>
+                <option value="Terror">Terror</option>
+                <option value="RPG Tactico">RPG táctico</option>
+                <option value="Mundo Abierto">Mundo Abierto</option>
+                <option value="Sigilo">Sigilo</option>
+                <option value="Hack and Slash">Hack and Slash</option>
+                <option value="Plataformas">Plataformas</option>
+            </select>
+            <select id="device-select">
+                <option value="all">Todos Dispositivos</option>
+                <option value="PC">PC</option>
+                <option value="Mobile">Mobile</option>
+            </select>
+        </div>
+        <!-- Lista de juegos -->
+        <section class="game-list" id="game-list">
+            <!-- Juegos cargados desde JavaScript -->
+        </section>
+        <div class="load-more-container">
+            <button id="load-more">CARGAR MÁS</button>
+        </div>
+    </main>
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Información de Contacto</h3>
+                <p></p>
+                <p><strong>Discord:</strong></p>
+                <a href="https://discord.com/invite/DTA4agWEsJ" rel="discord" class="external-link">PinkyCore</a>
+                <p><strong>Email:</strong></p>
+                <a href="" target="_blank">PinkyCore@gmail.com</a>
+            </div>
+            <div class="privacy">
+                <h3>Privacy & Legality</h3>
+                <a href="P&P.html">Privacidad y Legalidad en PinkyCore</a>
+            </div>
+            <div class="social-media">
+                <h3>Redes Sociales</h3>
+                <strong>Siguenos en:</strong>
+                <p></p>
+                <a href="tiktok.com" class="external-link"><img src="recurses/images/socials/tik-tok.png" alt="" height="30"></a>
+                <a href="x.com" class="external-link"><img src="recurses/images/socials/x.png" alt="" height="30"></a>
+                <a href="https://www.instagram.com/pinkythedoggames/" class="external-link"><img src="recurses/images/socials/instagram.png" alt="" height="30"></a>
+            </div>
+        </div>
+    </footer>
+
+    <aside class="sidebar" id="sidebar">
+        <ul>
+            <li><a href="inicio.html"><img src="recurses/images/logo/logo-p.png" alt="Inicio"> Inicio</a></li> <!-- Imagen de casa -->
+            <li><a href="index.html"><img src="recurses/images/menu/games.png" alt="Juegos"> Juegos</a></li> <!-- Imagen de joystick -->
+            <li><a href="#" id="config-link"><img src="recurses/images/menu/config.png" alt="Configuración"> Configuración</a></li>
+        </ul>
+        <!-- <ul class="submenu" id="config-submenu">
+            <li><a href="#" id="light-theme">Tema Claro</a></li>
+            <li><a href="#" id="dark-theme">Tema Oscuro</a></li>
+        </ul> -->
+        <ul class="bottom-buttons">
+            <li><a href="#" target="_blank"><img src="recurses/images/menu/help.png" alt="Ayuda"> Ayuda</a></li>
+            <li><a href="https://discord.com/invite/DTA4agWEsJ" target="_blank"><img src="recurses/images/socials/discord.png" alt="Discord"> Discord</a></li>
+        </ul>
+    </aside>
+</div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
