@@ -6,7 +6,17 @@ import os
 print(sys.executable)
 
 
+# src/main.py
+from updater import check_for_updates
 
+def main():
+    current_version = "1.0.0"  # Versión actual de tu aplicación
+    check_for_updates(current_version)
+    
+    # Aquí va el resto de tu lógica de aplicación
+    print("Iniciando PinkyCore...")
+    # Tu código de aplicación aquí
+    
 
 def resource_path(relative_path):
     """ Get the absolute path to a resource, works for dev and for PyInstaller """
@@ -37,7 +47,7 @@ class CustomHTTPRequestHandler(SimpleHTTPRequestHandler):
     
 
 # Ejemplo de uso
-html_file = resource_path('web/inicio.html')
+html_file = resource_path('web/inicio.html')    
 
 class Api:
     def toggle_sidebar(self):
