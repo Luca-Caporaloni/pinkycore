@@ -1,2 +1,2 @@
-# pinkycore
+# PINKYCORE
 Descarga juegos con PinkyCore
